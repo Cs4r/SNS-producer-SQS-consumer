@@ -1,0 +1,49 @@
+group 'cs4r.labs'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // AWS
+    compile 'com.amazonaws:aws-java-sdk-sns:1.11.270'
+    compile 'com.amazonaws:aws-java-sdk-core:1.11.270'
+
+    compile 'com.amazonaws:aws-java-sdk:1.11.270'
+    compile 'com.amazonaws:amazon-sqs-java-messaging-lib:1.0.4'
+
+
+
+    // Spring framework dependencies
+    compile("org.springframework.boot:spring-boot-starter-web")
+
+    compile 'org.springframework:spring-jms:5.0.3.RELEASE'
+
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task initSourceFolders {
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}
