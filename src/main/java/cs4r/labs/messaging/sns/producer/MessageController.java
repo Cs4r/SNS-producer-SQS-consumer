@@ -1,6 +1,6 @@
-package cs4r.labs.sns.example.producer;
+package cs4r.labs.messaging.sns.producer;
 
-import cs4r.labs.sns.example.common.MessageDto;
+import cs4r.labs.messaging.common.MessageDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example.consumer;
+package cs4r.labs.messaging.sqs.consumer;
 
 import com.amazon.sqs.javamessaging.SQSConnectionFactory;
 import com.amazonaws.auth.AWSCredentials;

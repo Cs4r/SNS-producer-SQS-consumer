@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example.consumer;
+package cs4r.labs.messaging.sqs.consumer;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.boot.context.properties.ConfigurationProperties;

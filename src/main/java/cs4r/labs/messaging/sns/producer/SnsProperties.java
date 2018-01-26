@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example.producer;
+package cs4r.labs.messaging.sns.producer;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.boot.context.properties.ConfigurationProperties;

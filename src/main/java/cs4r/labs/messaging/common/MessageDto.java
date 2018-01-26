@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example.common;
+package cs4r.labs.messaging.common;
 
 import java.io.Serializable;
 

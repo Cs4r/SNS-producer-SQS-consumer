@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example;
+package cs4r.labs.messaging;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

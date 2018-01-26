@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example;
+package cs4r.labs.messaging;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;

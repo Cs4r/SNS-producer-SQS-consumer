@@ -1,4 +1,4 @@
-package cs4r.labs.sns.example.producer;
+package cs4r.labs.messaging.sns.producer;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;

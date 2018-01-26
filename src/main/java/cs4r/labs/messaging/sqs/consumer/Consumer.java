@@ -1,6 +1,6 @@
-package cs4r.labs.sns.example.consumer;
+package cs4r.labs.messaging.sqs.consumer;
 
-import cs4r.labs.sns.example.common.MessageDto;
+import cs4r.labs.messaging.common.MessageDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jms.annotation.JmsListener;
