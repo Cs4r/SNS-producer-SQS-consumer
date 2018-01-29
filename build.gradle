@@ -47,3 +47,9 @@ task initSourceFolders {
     sourceSets*.java.srcDirs*.each { it.mkdirs() }
     sourceSets*.resources.srcDirs*.each { it.mkdirs() }
 }
+
+
+task run(type: JavaExec, dependsOn: classes) {
+    main = 'cs4r.labs.messaging.MainApplication'
+    classpath = sourceSets.main.runtimeClasspath
+}

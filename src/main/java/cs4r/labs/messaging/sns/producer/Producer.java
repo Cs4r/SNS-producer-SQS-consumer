@@ -38,10 +38,12 @@ public class Producer {
         Map<String, MessageAttributeValue> attributes = new HashMap<>();
         attributes.put("_type", objectType);
 
+        String messageAsJson = objectMapper.writeValueAsString(message);
+
         PublishRequest publishRequest = new PublishRequest()
                 .withMessageAttributes(attributes)
                 .withTopicArn(topicArn)
-                .withMessage(objectMapper.writeValueAsString(message));
+                .withMessage(messageAsJson);
 
         snsClient.publish(publishRequest);
     }
